@@ -1,0 +1,97 @@
+@import "colores";
+
+/*------Footer-------*/
+footer {
+  background-image: linear-gradient(to bottom, #b36f11, #c6924b, #d9b57f, #ebd8b6, #fffaf0);
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem; 
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  padding: 2rem 0;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+/*--Redes--*/
+.footer__redes {
+  grid-column: 2;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 1.8rem;
+  width: 100%;
+  max-width: 5rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+   
+.fa:hover {
+  opacity: 0.7;
+  color: white;
+}
+
+$redes: ( 
+        twitter: $marron-oscuro,
+        facebook:  $marron-oscuro,
+        instagram: $marron-oscuro
+); 
+
+@each $red, $color in $redes {
+   .fa-#{$red} {
+       background: $color;
+       color: white;
+   }
+}
+
+/*--Formulario--*/
+.footer__formulario {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  grid-column: 3;
+}
+
+.footer__formulario__form {
+  font-size: 2rem;
+  color: black; 
+  max-width: 600px;
+  padding: 0 2rem;  
+}
+
+.footer__formulario__titulo {
+  text-align: center;
+  padding: 2rem 0;
+  color: #232020;
+  font-size: 3.5rem;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 1400;
+}
+
+.boton {
+  padding: 0.2rem;
+  width: 30rem;
+  border-color: #b36f11;
+  border-radius: 25px 0px 25px 0px;
+  background-color: #232020;
+  color: #b36f11;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 0 auto; 
+}
+
+.boton:hover {
+  border-color: #232020; 
+  background-color: blanchedalmond;
+  color: black;
+}
+
+.cajaNewletter {
+  flex-direction: row;
+}
+
+.cajaBotones{
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,61 @@
+@import "colores";
+
+/*----Formato pagina tienda----*/
+
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4,auto);
+    justify-content: center;
+    grid-gap: 0.7rem;
+}
+
+.contenedorHeader{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.contenedorNav{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.contenidoFooter{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.contenedorMain{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,auto);  
+}
+
+.contenidoPortada{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    width: 50%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contenidosImagen{
+    text-align: center;
+}
+    
+.contenidosImagen__parrafo{
+    font-size: 1.5rem;
+    transform: translateX(2);
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;       
+}
+    
+.contenidosImagen__titulo{
+    color: $marron-oscuro;
+    font-size: 3rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 1800;
+}
+

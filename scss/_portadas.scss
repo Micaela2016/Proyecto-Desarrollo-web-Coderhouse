@@ -1,0 +1,23 @@
+@import "colores";
+
+/*-----FormatoPortadas-----*/
+
+.formatoPortada {
+    font-family: 'Barlow Condensed', sans-serif;
+    color: $marron-oscuro;
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center;
+    border: 1px;
+    background-color:$marron-claro;
+    margin: 0 0 25px; 
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    border: 2px solid $marron-oscuro;  
+}
+
+.formatoCajaPortada {
+    width: 40%;
+    max-width: 500px;
+    margin: 0 auto;
+}

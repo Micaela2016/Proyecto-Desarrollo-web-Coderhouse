@@ -1,0 +1,32 @@
+/*-----Formato Imagenes-----*/
+$anchoImagen: 300px;
+
+.formatoImagenInicio {
+    border-radius:4rem;
+    width: 100%;
+    max-width: $anchoImagen;
+}
+
+.formatoLogo {
+    width: ($anchoImagen/6)*5;
+    display: inline-block;
+}
+
+.contenidosImagen__img {
+    width: ($anchoImagen/6)*5;
+    border-radius:4rem;
+}
+
+.tarjeta__img {
+    width:100%;
+    border-radius:4rem;
+    max-width: $anchoImagen;
+    margin-left: 10px;
+}
+
+.contenidoImagenFab__img {
+    width:100%;
+    max-width: $anchoImagen;
+    margin-left: 10px;
+    grid-row: 2;
+}

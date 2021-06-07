@@ -1,0 +1,51 @@
+@import "colores";
+$tamañoLetra: 2rem;
+
+/*----------Pagina--------*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: blanchedalmond;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*--------Formatos letras generales--------*/
+h2 {
+    color: $marron-claro;
+    font-size: ($tamañoLetra)*2;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 1400;
+    text-align: center;
+}
+
+h3 {
+    color: $marron-claro;
+    font-size: ($tamañoLetra)+($tamañoLetra)/2;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 800;
+}
+
+p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: $tamañoLetra;
+}
+
+/*--------Page 404--------*/
+.titulo {
+    text-align: center;
+    font-size: 3rem;
+    
+}
+
+.img404 {
+    display:block;
+    margin:auto;
+}

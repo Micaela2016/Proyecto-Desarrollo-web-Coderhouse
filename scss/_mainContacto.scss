@@ -1,0 +1,52 @@
+@import "colores";
+
+/*------Pagina contacto-------*/
+
+/*--Info--*/
+.contactoContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.contactoContainer__titulo {
+    color: $marron-claro;
+    font-size: 4rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 1400;
+    text-align: center;
+
+}
+
+.contactoContainer__parrafo {
+    font-size: 1.9rem;
+}
+
+/*--Botones--*/
+.contactoContainer__boton {
+    padding: 0.2rem;
+    width: 30rem;
+    border-color: $marron-claro;
+    border-radius: 25px 0px 25px 0px;
+    background-color: $marron-oscuro;
+    color: $marron-claro;
+    font-size: 1.5rem;
+    cursor: pointer; 
+}
+
+.contactoContainer__boton:hover {
+        border-color: $marron-oscuro; 
+        background-color: blanchedalmond;
+        color: black;
+}
+
+.contactoContainer__boton--link{
+    text-decoration: none;
+    font-size: 1rem;
+    color:peru;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+}
