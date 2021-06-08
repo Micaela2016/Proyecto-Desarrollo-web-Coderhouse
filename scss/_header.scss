@@ -1,61 +1,72 @@
 @import "colores";
 
 /*------Header-------*/
-.header {
-  overflow: hidden;
-  background-color: $marron-oscuro;
-  padding: 1rem 1rem;
-}
 
-.header a {
-  float: left;
-  color: peru;
-  text-align: center;
-  padding: 0.5rem 1rem;
-  text-decoration: none;
-  font-size: 1.8rem;
-  line-height: 25px;
-  position: relative;
-  border-radius: 0.4rem;
-}
-
-.header a:hover {
-  color: white;
-}
-
-.header a.active {
-  background-color: white;
-  color: peru;
-}
 
 /*-- Logo--*/
 .header__logo {
 	display: block;
   max-width: 250px;
   padding: 1rem;
+  margin: 0 auto;
 }
 
 /*--Navegador--*/
-.header__nav{
-  display: block;
-  position: relative;
+ul {
+  list-style: none;
+
+  li {
+      font-size: 1.8rem;
+      border-radius: 4rem;
+      position: relative;
+      flex: 1 1 auto;
+      cursor: pointer;
+      background-color: $marron-oscuro;
+
+      a {
+          font-size: 1.8rem;
+          color:peru;
+          text-decoration: none;
+          padding: 0.5rem 1rem;
+          display: inline-block;
+      }
+
+      a:hover{
+          color: white;
+      }
+  }
+
+  li:hover {
+      ul {
+          display: block;
+          padding: 2px;
+      }
+  }
+  ul {
+      display: none;
+      position:absolute;
+      background-color:#232020;
+      top: 100%;
+      left:0;
+      width: 100%;
+      z-index: 10;
+      li {
+          display: block;  
+      }
+  }
+}
+
+.active {
+  color: white;
 }
 
 .header__nav--lista {
-  display:none;
-	position:absolute;
-	min-width:140px;
-}
-
-.header__nav--lista li:hover > ul {
-  display:block;
-}
-
-.header__nav--lista ul{
-  position:relative;  
-}
-
-.header__nav--lista ul li {
-  right:-140px;
-  top:0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  padding: 1rem;
+  li {
+      margin-bottom: 1rem;
+  }
 }

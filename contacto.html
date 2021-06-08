@@ -17,27 +17,29 @@
 </head>
 <body>
     <!--Comienza el header-->
-    <header class="header">
+    <header>
         <!--Logotipo-->
         <div class="header__logo">
-            <a href="index.html">
-                <img src="img/logo.png" class="formatoLogo" alt="Haz clic aquí para volver a la página de inicio">
-            </a>
+          <a href="index.html">
+            <img src="img/logo.png"  class="formatoLogo" alt="Haz clic aquí para volver a la página de inicio">
+          </a>
         </div>
-        <div class="header__nav">
-            <a href="index.html">Inicio</a>
-            <a href="tienda.html">Tienda</a>
-            <a href="nuestrascervezas.html">nuestrascervezas</a>
-            <a href="nuestrafabrica.html">Nuestras fábricas</a>
-            <div class="header__nav--lista">
-                <ul>
-                    <li><a href="fabrica1.html">Fábrica Bariloche</a></li>
-                    <li><a href="fabrica2.html">Fábrica Bahia Blanca</a></li>
-                </ul>
-            </div>    
-            <a class="active" href="contacto.html">Contacto</a>
-        </div>
-    </header>
+        <!--Navegador-->
+        <nav class="header__nav">
+          <ul class="header__nav--lista">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="nuestrascervezas.html">Nuestras cervezas</a></li>
+            <li><a href="nuestrafabrica.html">Nuestras fábricas</a>
+              <ul>
+                <li><a href="fabrica1.html">Fábrica Bariloche</a></li>
+                <li><a href="fabrica2.html" class="active">Fábrica Bahia Blanca</a></li>
+              </ul>
+            </li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </header>
 
     <!--Comienza el main-->
     <main>
