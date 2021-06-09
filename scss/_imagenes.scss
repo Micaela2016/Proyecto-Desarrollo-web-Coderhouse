@@ -12,8 +12,9 @@ $anchoImagen: 300px;
 }
 
 .contenidosImagen__img {
-    width: ($anchoImagen/6)*5;
+    width: 100%;
     border-radius:4rem;
+    max-width: ($anchoImagen/6)*5;
 }
 
 .tarjeta__img {

@@ -70,13 +70,30 @@
         font-size: 1.2rem;
     }
 
+    /*-- MainTienda--*/
+    .contenedor{
+        grid-template-columns: 320px;
+        grid-template-rows: repeat(6,auto);
+        justify-content: center;
+        align-items: center;  
+    }
+    
+    .contenidosImagen{
+        text-align: center;
+    }
+
+    .contenidosImagen__img {
+        width: 50%;
+        border-radius:4rem;
+    }
+
+
     /*-- Footer--*/
     footer {
         grid-template-rows: auto auto auto;
         grid-template-columns: 320px;
         justify-content: center;
         align-items: center;
-  
     }
 
     .footer__redes {
@@ -127,13 +144,21 @@
         font-size: 1.5rem;
     }
       
-      .footer__contacto #emailContacto{
+    .footer__contacto #emailContacto{
         
-        font-size: 1.5rem;
-      }
+        font-size: 1.2rem;
+    }
       
-      .footer__contacto textarea{
+    .footer__contacto textarea{
         
-        font-size: 1.5rem;
-      }
+        font-size: 1.2rem;
+    }
+
+    .contenidosImagen__parrafo{
+        font-size: 1.2rem;      
+    }
+        
+    .contenidosImagen__titulo{
+        font-size: 2rem;
+    }
 }
