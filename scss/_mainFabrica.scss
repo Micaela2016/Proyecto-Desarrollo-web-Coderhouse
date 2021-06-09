@@ -7,7 +7,7 @@
 }
 
 .tarjeta {
-	background-color: $marron-claro;
+	background-color: $marron-oscuro;
 	border-radius: 15px;
 	padding: 20px;
 	display: flex;
@@ -17,21 +17,23 @@
 }
 
 .tarjeta__titulo {
-	color: $marron-oscuro;
+	color: $marron-claro;
     font-size: 3.2rem;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 1400;
+	text-align: center;
 }
 
 .tarjeta__parrafo {
 	line-height: 28px;
 	font-size: 1.5rem;
+	color: blanchedalmond;
 }
 
 .botonFab {
 	height: 60px;
 	padding: 20px;
-	background-color: blanchedalmond;
+	background-color: $marron-claro;
 	color: $marron-oscuro;
 	display: inline-block;
 	text-decoration: none;

@@ -10,7 +10,6 @@ footer {
   padding: 2rem 0;
   display: grid;
   grid-template-columns: auto auto auto auto;
-  
 }
 
 /*--Redes--*/
@@ -48,7 +47,7 @@ $redes: (
    }
 }
 
-/*--Redes--*/
+/*--Seguinos--*/
 .footer__seguinos{
   grid-column: 3;
   padding: 1rem 0; 
@@ -64,7 +63,7 @@ $redes: (
   font-size: $tamañoLetra;
 }
 
-
+/*--Contacto--*/
 .footer__contacto{
   grid-column: 4;
   padding: 1rem 0;
@@ -87,6 +86,7 @@ $redes: (
   font-size: $tamañoLetra;
 
 }
+
 .footer__contacto #emailContacto{
   grid-row: 2/3;
   grid-column: 1/2;
@@ -94,6 +94,7 @@ $redes: (
   font-weight: 400;
   font-size: $tamañoLetra;
 }
+
 .footer__contacto textarea{
   grid-row: 1/4;
   grid-column: 2/3;
@@ -101,12 +102,12 @@ $redes: (
   font-weight: 400;
   font-size: $tamañoLetra;
 }
+
 .footer__contacto button {  
   grid-row: 3/4;
   grid-column: 1/2;
-  
-
 }
+
 .boton{
   padding: 0.4rem;
   border-color:$marron-oscuro;
@@ -118,15 +119,9 @@ $redes: (
   font-weight: 400;
   font-size: $tamañoLetra;
 }
+
 .boton:hover{
   border-color: white;  
   color: white;  
   background-color: black;
-}
-
-input,textarea{
-  padding: 0.4rem;
-  font-family: 'Inconsolata', monospace;
-  background-color: rgb(14, 13, 13);
-
 }

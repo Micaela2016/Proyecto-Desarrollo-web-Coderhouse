@@ -115,7 +115,7 @@ footer {
   background: #ff920f;
   color: white; }
 
-/*--Redes--*/
+/*--Seguinos--*/
 .footer__seguinos {
   grid-column: 3;
   padding: 1rem 0; }
@@ -128,6 +128,7 @@ footer {
   font-weight: 400;
   font-size: 1.8rem; }
 
+/*--Contacto--*/
 .footer__contacto {
   grid-column: 4;
   padding: 1rem 0;
@@ -180,11 +181,6 @@ footer {
   border-color: white;
   color: white;
   background-color: black; }
-
-input, textarea {
-  padding: 0.4rem;
-  font-family: 'Inconsolata', monospace;
-  background-color: #0e0d0d; }
 
 /*----Formato pagina tienda----*/
 .contenedor {
@@ -242,7 +238,7 @@ input, textarea {
   margin: 0 auto; }
 
 .tarjeta {
-  background-color: #ff920f;
+  background-color: #232020;
   border-radius: 15px;
   padding: 20px;
   display: flex;
@@ -251,19 +247,21 @@ input, textarea {
   margin-bottom: 50px; }
 
 .tarjeta__titulo {
-  color: #232020;
+  color: #ff920f;
   font-size: 3.2rem;
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 1400; }
+  font-weight: 1400;
+  text-align: center; }
 
 .tarjeta__parrafo {
   line-height: 28px;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  color: blanchedalmond; }
 
 .botonFab {
   height: 60px;
   padding: 20px;
-  background-color: blanchedalmond;
+  background-color: #ff920f;
   color: #232020;
   display: inline-block;
   text-decoration: none;
@@ -515,30 +513,11 @@ tr, td {
   padding: 25px; }
 
 /*--- Responsive----- */
-.containerMobile {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "box1" "box2" "box3";
-  grid-gap: 1rem; }
-  .containerMobile .box-1 {
-    grid-area: box1; }
-  .containerMobile .box-2 {
-    grid-area: box2; }
-  .containerMobile .box-3 {
-    grid-area: box3;
-    text-align: center; }
-
-@media (min-width: 768px) {
-  .header__nav--lista {
-    flex-direction: row; }
-    .header__nav--lista li {
-      margin: 0 1rem; }
-  .hijoInicio {
-    flex-direction: row;
-    justify-content: center; }
-    .hijoInicio p {
-      width: 90%; }
+/* 
+    ##Dispositivo = Tablets, Ipads (vertical)
+    ##Resolucion = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
   .contenedor {
     grid-template-columns: repeat(3, 1fr); }
   .contenedorMain {
@@ -547,3 +526,63 @@ tr, td {
   .contenidosImagenes {
     grid-column-start: auto;
     grid-column-end: auto; } }
+
+/* 
+    ##Dispositivo = Tablets, Ipads (horizontal)
+    ##Resolucion = B/w 768px to 1024px
+*/
+/* 
+    ##Dispositivo = Tablets de baja resolucion y telefnos Mobiles (horizontal)
+    ##Resolucion = B/w 481px to 767px
+*/
+/* 
+    ##Dispositivo = Mayoria de telefonos moviles (vertical)
+    ##Resolucion = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  /*--Portada--*/
+  .title h1 {
+    font-size: 5rem;
+    text-align: center; }
+  /*--Generales--*/
+  h2 {
+    font-size: 2.5rem; }
+  p {
+    font-size: 1.2rem; }
+  /*-- Footer--*/
+  footer {
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 320px;
+    justify-content: center;
+    align-items: center; }
+  .footer__redes {
+    grid-row: 1;
+    grid-column: 1;
+    justify-content: center;
+    text-align: center; }
+  .footer__seguinos {
+    grid-row: 2;
+    grid-column: 1;
+    justify-content: center;
+    text-align: center; }
+  .footer__seguinos p {
+    text-align: center; }
+  .footer__seguinos h3 {
+    text-align: center;
+    font-size: 2rem; }
+  .footer__contacto {
+    grid-row: 3;
+    grid-column: 1; }
+  .footer__contacto h3 {
+    text-align: center;
+    font-size: 2rem; }
+  .footer__seguinos #email {
+    font-size: 1.5rem; }
+  .boton {
+    font-size: 1.5rem; }
+  .footer__contacto #nombre {
+    font-size: 1.5rem; }
+  .footer__contacto #emailContacto {
+    font-size: 1.5rem; }
+  .footer__contacto textarea {
+    font-size: 1.5rem; } }
