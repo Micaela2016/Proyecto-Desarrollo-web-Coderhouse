@@ -1,72 +1,42 @@
 @import "colores";
 
 /*------Header-------*/
-
-
-/*-- Logo--*/
-.header__logo {
-	display: block;
-  max-width: 250px;
-  padding: 1rem;
-  margin: 0 auto;
+.header {
+  overflow: hidden;
+  background-color: $marron-oscuro;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
 }
 
-/*--Navegador--*/
-ul {
-  list-style: none;
+.header a {
+  font-size: 1.8rem;
+  color:peru;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
 
-  li {
-      font-size: 1.8rem;
-      border-radius: 4rem;
-      position: relative;
-      flex: 1 1 auto;
-      cursor: pointer;
-      background-color: $marron-oscuro;
+.header a:hover {
+  color: blanchedalmond;
 
-      a {
-          font-size: 1.8rem;
-          color:peru;
-          text-decoration: none;
-          padding: 0.5rem 1rem;
-          display: inline-block;
-      }
+}
 
-      a:hover{
-          color: white;
-      }
-  }
+.dropdown-formato {
+  background-color: $marron-claro;
+  border-radius: 1rem;
 
-  li:hover {
-      ul {
-          display: block;
-          padding: 2px;
-      }
-  }
-  ul {
-      display: none;
-      position:absolute;
-      background-color:#232020;
-      top: 100%;
-      left:0;
-      width: 100%;
-      z-index: 10;
-      li {
-          display: block;  
-      }
-  }
+}
+
+.dropdown-menu a{
+  color: $marron-oscuro;
+}
+
+.dropdown-menu a:hover{
+  color: $marron-claro;
 }
 
 .active {
-  color: white;
-}
-
-.header__nav--lista {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
-  padding: 1rem;
-  li {
-      margin-bottom: 1rem;
-  }
+  color: blanchedalmond;
 }
