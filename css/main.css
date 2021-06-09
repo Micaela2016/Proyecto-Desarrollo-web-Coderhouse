@@ -4,7 +4,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #fff3e4; }
+  background-color: blanchedalmond; }
 
 * {
   margin: 0;
@@ -203,6 +203,39 @@ footer {
   font-size: 3rem;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 1800; }
+
+/*--------Formato tablas------*/
+.contenedorTabla {
+  overflow-x: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.table-formato {
+  background-image: url(../img/fondotabla.jpg);
+  color: #ff920f;
+  background-image: no-repeat;
+  background-image: fixed;
+  background-image: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-size: 2rem;
+  border: 1px solid #ccc;
+  border-collapse: collapse; }
+
+th {
+  text-align: center;
+  border: 0.2rem solid; }
+
+tr, td {
+  border: 0.2rem solid;
+  padding: 25px;
+  text-align: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 2rem; }
 
 /*------Pagina Fabrica-------*/
 .caja {
@@ -471,21 +504,6 @@ footer {
     line-height: .75;
     margin: 10px 0; }
 
-/*--------Formato tablas------*/
-table {
-  color: #ff920f;
-  border: 3px;
-  font-size: 2rem;
-  margin: auto; }
-
-th {
-  background-color: #232020;
-  border: 1px solid; }
-
-tr, td {
-  border: 1px solid;
-  padding: 25px; }
-
 /*--- Responsive----- */
 /* 
     ##Dispositivo = Tablets, Ipads (vertical)
@@ -574,4 +592,32 @@ tr, td {
   .contenidosImagen__parrafo {
     font-size: 1.2rem; }
   .contenidosImagen__titulo {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  /*-- Tabla nuestras cervezas--*/
+  table {
+    border: 0; }
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 0.1rem; }
+  table tr {
+    border-bottom: 0.3rem solid #ddd;
+    display: block;
+    margin-bottom: .625em; }
+  table td {
+    border-bottom: 1px solid #ddd;
+    display: block;
+    font-size: .8em;
+    text-align: right; }
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    font-weight: bold;
+    text-transform: uppercase; }
+  table td:last-child {
+    border-bottom: 0; } }

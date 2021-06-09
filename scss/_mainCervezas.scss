@@ -1,0 +1,42 @@
+@import "colores";
+
+/*--------Formato tablas------*/
+
+.contenedorTabla {
+    overflow-x:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table-formato {
+    background-image: url(../img/fondotabla.jpg);
+    color: $marron-claro;
+    background-image: no-repeat;
+    background-image: fixed;
+    background-image: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-size: 2rem;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: center;
+    border: 0.2rem solid;
+    
+}
+
+tr, td {
+    border: 0.2rem solid;
+    padding: 25px;
+    text-align: center;
+    
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+}
+
