@@ -2,9 +2,8 @@
 $anchoImagen: 300px;
 
 .formatoImagenInicio {
-    border-radius:4rem;
     width: 100%;
-    max-width: $anchoImagen;
+    max-width: $anchoImagen+150px;
 }
 
 .formatoLogo {

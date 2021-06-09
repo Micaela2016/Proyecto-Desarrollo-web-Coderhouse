@@ -3,7 +3,8 @@
 /*------Header-------*/
 .header {
   overflow: hidden;
-  background-color: $marron-oscuro;
+  background: rgb(35,32,32);
+  background: linear-gradient(180deg, rgba(35,32,32,1) 89%, rgba(255,235,205,1) 97%);
   padding: 3rem;
   display: flex;
   justify-content: center;
@@ -12,14 +13,14 @@
 
 .header a {
   font-size: 1.8rem;
-  color:peru;
+  color: #ff920f;
   text-decoration: none;
   padding: 0.5rem 1rem;
   display: inline-block;
 }
 
 .header a:hover {
-  color: blanchedalmond;
+  color: #ffebcd;
 
 }
 
