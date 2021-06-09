@@ -4,7 +4,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: blanchedalmond; }
+  background-color: #fff3e4; }
 
 * {
   margin: 0;
@@ -87,11 +87,12 @@ footer {
 
 /*--Redes--*/
 .footer__redes {
-  grid-column: 2; }
+  grid-column: 2;
+  padding: 1rem 0; }
 
 .fa {
   padding: 20px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   width: 100%;
   max-width: 5rem;
   text-align: center;
@@ -100,7 +101,7 @@ footer {
 
 .fa:hover {
   opacity: 0.7;
-  color: white; }
+  color: #232020; }
 
 .fa-twitter {
   background: #ff920f;
@@ -114,49 +115,76 @@ footer {
   background: #ff920f;
   color: white; }
 
-/*--Formulario--*/
-.footer__formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  grid-column: 3; }
+/*--Redes--*/
+.footer__seguinos {
+  grid-column: 3;
+  padding: 1rem 0; }
 
-.footer__formulario__form {
-  font-size: 2rem;
-  color: black;
-  max-width: 600px;
-  padding: 0 2rem; }
+.footer__seguinos p {
+  color: blanchedalmond; }
 
-.footer__formulario__titulo {
-  text-align: center;
-  padding: 2rem 0;
-  color: #232020;
-  font-size: 3.5rem;
+.footer__seguinos #email {
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 1400; }
+  font-weight: 400;
+  font-size: 1.8rem; }
+
+.footer__contacto {
+  grid-column: 4;
+  padding: 1rem 0;
+  margin-right: 0.5rem; }
+
+.footer__contacto form {
+  display: grid;
+  grid-template-rows: 3rem 3rem 3rem;
+  grid-template-columns: auto auto;
+  align-content: center;
+  grid-gap: 0.5rem; }
+
+.footer__contacto #nombre {
+  grid-row: 1/2;
+  grid-column: 1/2;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem; }
+
+.footer__contacto #emailContacto {
+  grid-row: 2/3;
+  grid-column: 1/2;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem; }
+
+.footer__contacto textarea {
+  grid-row: 1/4;
+  grid-column: 2/3;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem; }
+
+.footer__contacto button {
+  grid-row: 3/4;
+  grid-column: 1/2; }
 
 .boton {
-  padding: 0.2rem;
-  width: 30rem;
-  border-color: #b36f11;
-  border-radius: 25px 0px 25px 0px;
-  background-color: #232020;
-  color: #b36f11;
-  font-size: 1.5rem;
+  padding: 0.4rem;
+  border-color: #232020;
+  background-color: #ff920f;
+  border-radius: 0.2rem;
+  text-align: center;
   cursor: pointer;
-  margin: 0 auto; }
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem; }
 
 .boton:hover {
-  border-color: #232020;
-  background-color: blanchedalmond;
-  color: black; }
+  border-color: white;
+  color: white;
+  background-color: black; }
 
-.cajaNewletter {
-  flex-direction: row; }
-
-.cajaBotones {
-  display: flex;
-  flex-direction: column; }
+input, textarea {
+  padding: 0.4rem;
+  font-family: 'Inconsolata', monospace;
+  background-color: #0e0d0d; }
 
 /*----Formato pagina tienda----*/
 .contenedor {
@@ -246,7 +274,7 @@ footer {
 /*--Fabrica 1 y 2-- */
 .tituloFabricas {
   color: #ff920f;
-  font-size: 4rem;
+  font-size: 3.6rem;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 1400;
   text-align: center; }

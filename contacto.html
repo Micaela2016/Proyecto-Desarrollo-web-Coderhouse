@@ -89,67 +89,26 @@
             <a href="#" class="fa fa-twitter"></a>
             <a href="#" class="fa fa-instagram"></a>
         </section>
-        <!--Formulario-->
-        <section class="footer__formulario">
-            <h3 class="footer__formulario__titulo">Formulario</h3>
-            <form class="footer__formulario__form">
-                <!--Nombre-->
-                <div class="form-floating mb-3">
-                    <input class="form-control" id="floatingName" placeholder="Micaela">
-                    <label for="floatingName">Nombre</label>
-                </div>
-                <!--Email-->
-                <div class="form-floating">
-                    <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
-                    <label for="floatingEmail">Email</label>
-                </div>
-                <!--Pais-->
-                <label for="exampleDataList" class="form-label">Pais</label>
-                <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Click para buscar">
-                <datalist id="datalistOptions">
-                    <option value="Argentina">
-                    <option value="Chile">
-                    <option value="Mexico">
-                    <option value="Paraguay">
-                    <option value="Uruguay">
-                </datalist>
-                <br>
-                <!--Mensaje-->
-                <div class="form-floating">
-                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                    <label for="floatingTextarea">Mensaje</label>
-                </div>
-                <!--Newletter-->
-                <div class="cajaNewletter">   
-                    <input type="checkbox" name="aceptacion" value="1"/>
-                    <label>¿Desea recibir nuestro newsletter? </label> 
-                </div>
-                <!--Botones-->
-                <div class="cajaBotones"> 
-                    <!-- Boton enviar -->
-                    <button type="button" class="boton" data-bs-toggle="modal" data-bs-target="#exampleModal">Enviar Mensaje</button>
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Mensaje</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    Su mensaje se ha enviado correctamente.
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="boton" data-bs-dismiss="modal">Ok</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Boton reset -->
-                    <button type="reset" class="boton">Limpiar datos</button> 
-                </div>       
+        <!--Seguinos-->
+        <div class="footer__seguinos">
+            <h3>SEGUINOS</h3>
+            <p>¡ENTERATE DE LAS ULTIMAS NOVEDADES!</p>
+            <form action="#" method="POST">
+            <input type="email" placeholder="Ingresá tu email" id="email" required>
+            <button type="submit" class="boton">SUSCRIBIRSE</button>
             </form>
-        </section>
+        </div>
+
+        <!--Contacto-->
+        <div class="footer__contacto">
+            <h3>CONTACTO</h3>
+            <form action="#" method="POST"> 
+                <input type="email" placeholder="Nombre" id="nombre" required>
+                <input type="email" placeholder="Email" id="emailContacto" required>
+                <textarea placeholder="Mensaje" rows="6" cols="40" id="mensaje"></textarea>
+                <button type="submit" class="boton">ENVIAR</button>
+            </form>
+        </div>       
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script> 
 </body>
