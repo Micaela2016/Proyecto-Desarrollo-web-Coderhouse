@@ -106,7 +106,7 @@
 	content: '';
 	position: absolute;
 	width: 6px;
-	background-color: white;
+	background-color: $marron-oscuro;
 	top: 0;
 	bottom: 0;
 	left: 50%;
@@ -125,7 +125,8 @@
 	padding: 10px 40px;
 	position: relative;
 	background-color: inherit;
-		width: 50%;
+	width: 50%;
+		
 }
 	  
 .contenidoTimeline__caja::after {
@@ -134,8 +135,8 @@
 	width: 25px;
 	height: 25px;
 	right: -17px;
-	background-color: white;
-	border: 4px solid #FF9F55;
+	background-color: $marron-oscuro;
+	border: 4px solid $marron-claro;
 	top: 15px;
 	border-radius: 50%;
 	z-index: 1;
@@ -181,7 +182,7 @@
 	  
 .contenidoTimeline__texto {
 	padding: 20px 30px;
-	background-color: white;
+	background-color: $marron-oscuro;
 	position: relative;
 	border-radius: 6px;
 }
@@ -194,7 +195,7 @@
 }
 
 .contenidoTimeline__texto--parrafo {
-	color:black;
+	color:blanchedalmond;
     font-size: 1.7rem;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 200;

@@ -21,19 +21,20 @@
 }
 
 .contactoContainer__parrafo {
-    font-size: 1.9rem;
+    font-size: 2rem;
 }
 
 /*--Botones--*/
 .contactoContainer__boton {
-    padding: 0.2rem;
-    width: 30rem;
-    border-color: $marron-claro;
-    border-radius: 25px 0px 25px 0px;
-    background-color: $marron-oscuro;
-    color: $marron-claro;
-    font-size: 1.5rem;
-    cursor: pointer; 
+    padding: 0.4rem;
+    border-color:$marron-oscuro;
+    background-color: $marron-claro;
+    border-radius: 0.2rem;
+    text-align: center;
+    cursor: pointer;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
 }
 
 .contactoContainer__boton:hover {
@@ -44,8 +45,8 @@
 
 .contactoContainer__boton--link{
     text-decoration: none;
-    font-size: 1rem;
-    color:peru;
+    font-size: 2rem;
+    color:$marron-oscuro;
     text-decoration: none;
     padding: 0.5rem 1rem;
     display: inline-block;
