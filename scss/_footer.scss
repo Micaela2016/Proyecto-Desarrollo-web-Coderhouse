@@ -9,19 +9,22 @@ footer {
   font-weight: 400;
   padding: 2rem 0;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(3, auto);
 }
 
 /*--Redes--*/
 .footer__redes {
-  grid-column: 2;
+  grid-column: 1;
   
   padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fa {
   padding: 20px;
-  font-size: 2rem;
+  font-size: 3rem;
   width: 100%;
   max-width: 5rem;
   text-align: center;
@@ -30,7 +33,7 @@ footer {
 }
    
 .fa:hover {
-  opacity: 0.7;
+  opacity: 0.6;
   color: $marron-oscuro;
 }
 
@@ -49,33 +52,46 @@ $redes: (
 
 /*--Seguinos--*/
 .footer__seguinos{
-  grid-column: 3;
-  padding: 1rem 0; 
+  grid-column: 2;
+  padding: 1rem 0;
+  display: grid;
+  grid-template-rows: repeat(3,auto);
 }
 
-.footer__seguinos p {
+.footer__seguinos--parrafo {
   color: blanchedalmond;
+  text-align: center;
 }
 
-.footer__seguinos #email{
+.footer__seguinos--email{
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
   font-size: $tamañoLetra;
 }
 
+.footer__seguinos--form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*--Contacto--*/
 .footer__contacto{
-  grid-column: 4;
+  grid-column: 3;
   padding: 1rem 0;
   margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .footer__contacto form{
- display: grid;
- grid-template-rows: 3rem 3rem 3rem;
- grid-template-columns: auto auto;
- align-content: center;   
- grid-gap:0.5rem
+  display: grid;
+  grid-template-rows: repeat(3,4rem);
+  grid-template-columns: auto auto;
+  align-content: center;   
+  grid-gap:0.5rem;
 } 
 
 .footer__contacto #nombre {
@@ -84,7 +100,6 @@ $redes: (
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
   font-size: $tamañoLetra;
-
 }
 
 .footer__contacto #emailContacto{
@@ -97,7 +112,7 @@ $redes: (
 
 .footer__contacto textarea{
   grid-row: 1/4;
-  grid-column: 2/3;
+  grid-column: 2;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
   font-size: $tamañoLetra;
@@ -117,7 +132,7 @@ $redes: (
   cursor: pointer;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
-  font-size: $tamañoLetra;
+  font-size: ($tamañoLetra)-0.1rem;
 }
 
 .boton:hover{
