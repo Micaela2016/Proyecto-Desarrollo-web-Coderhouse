@@ -111,7 +111,7 @@
         text-align: center;
     }
 
-    .footer__seguinos p {
+    .footer__seguino--parrafo{
         text-align: center;
     }
 
@@ -130,7 +130,7 @@
         font-size: 2rem;
     }
 
-    .footer__seguinos #email{
+    .footer__seguinos--email{
         font-size: 1.5rem;
       }
 
@@ -142,11 +142,14 @@
     .footer__contacto #nombre {
         
         font-size: 1.5rem;
+        margin-left: 0.2rem;
     }
       
     .footer__contacto #emailContacto{
         
         font-size: 1.2rem;
+        
+        margin-left: 0.2rem;
     }
       
     .footer__contacto textarea{
@@ -201,5 +204,21 @@
       
       table td:last-child {
         border-bottom: 0;
+      }
+
+      /*--Pagina fabrica
+
+      /*--Pagina contacto--*/
+      .contactoContainer__parrafo {
+        font-size: 1.3rem; 
+      }
+
+      .contactoContainer__boton {
+        font-size: 1.5rem;
+
+      }
+      .contactoContainer__boton--link{
+        font-size: 1.5rem;
+
       }
 }

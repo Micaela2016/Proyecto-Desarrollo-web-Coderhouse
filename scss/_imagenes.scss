@@ -15,9 +15,11 @@ $anchoImagen: 300px;
     width: 100%;
     border-radius:4rem;
     max-width: ($anchoImagen/6)*5;
+    
 }
 
-.tarjeta__img {
+.imgFab {
+    grid-column: 1;
     width:100%;
     border-radius:4rem;
     max-width: $anchoImagen;

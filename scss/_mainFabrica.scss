@@ -4,43 +4,73 @@
 	max-width: 1000px;
 	width: 90%;
 	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
 }
 
-.tarjeta {
+.caja__contenido {
+	display: grid;
+	height: 300px;
+	grid-template-columns: repeat(2, auto);
 	background-color: $marron-oscuro;
 	border-radius: 15px;
-	padding: 20px;
-	display: flex;
-	align-items: center;
-	position: relative;
-	margin-bottom: 50px; 
 }
 
-.tarjeta__titulo {
+.caja__contenido--img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.caja__contenido--texto {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.tituloFab {
 	color: $marron-claro;
+	grid-column: 2;
     font-size: 3.2rem;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 1400;
+}
+
+.parrafoFab {
+	font-size: 2rem;
+	color: blanchedalmond;
+	grid-column: 2;
 	text-align: center;
 }
 
-.tarjeta__parrafo {
-	line-height: 28px;
-	font-size: 1.5rem;
-	color: blanchedalmond;
+.botonFab {
+    padding: 0.2rem;
+    border-color:$marron-claro;
+    background-color: $marron-claro;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
 }
 
-.botonFab {
-	height: 60px;
-	padding: 20px;
-	background-color: $marron-claro;
-	color: $marron-oscuro;
-	display: inline-block;
-	text-decoration: none;
-    position: absolute;
-	right: 20px;
-	bottom: -25px;
+.botonFab:hover {
+    border-color: $marron-oscuro; 
+    background-color: blanchedalmond;
+    text-decoration: none;
+    color: $marron-oscuro;
 }
+
+.botonFab__link{
+    text-decoration: none;
+    font-size: 2rem;
+    color:$marron-oscuro;
+    padding: 0.5rem 1rem;
+}
+
+
+
 
 /*--Fabrica 1 y 2-- */
 .tituloFabricas{

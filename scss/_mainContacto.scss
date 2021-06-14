@@ -25,29 +25,34 @@
 }
 
 /*--Botones--*/
-.contactoContainer__boton {
-    padding: 0.4rem;
+
+.contactoContainer__botones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.botonContacto {
+    padding: 0.2rem;
     border-color:$marron-oscuro;
-    background-color: $marron-claro;
+    background-color: $marron-oscuro;
     border-radius: 0.2rem;
-    text-align: center;
     cursor: pointer;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;
-    font-size: 2rem;
 }
 
-.contactoContainer__boton:hover {
-        border-color: $marron-oscuro; 
-        background-color: blanchedalmond;
-        color: black;
+.botonContacto:hover {
+    border-color: $marron-oscuro; 
+    background-color: blanchedalmond;
+    text-decoration: none;
+    color: $marron-oscuro;
 }
 
-.contactoContainer__boton--link{
+.botonContacto--link{
     text-decoration: none;
     font-size: 2rem;
-    color:$marron-oscuro;
-    text-decoration: none;
+    color:$marron-claro;
     padding: 0.5rem 1rem;
-    display: inline-block;
 }
