@@ -27,33 +27,12 @@
 }
   
 /* 
-    ##Dispositivo = Tablets, Ipads (horizontal)
-    ##Resolucion = B/w 768px to 1024px
-*/
-  
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: horizontal) {
-    
-    //CSS
-    
-}
-  
-/* 
     ##Dispositivo = Tablets de baja resolucion y telefnos Mobiles (horizontal)
     ##Resolucion = B/w 481px to 767px
 */
   
 @media (min-width: 481px) and (max-width: 767px) {
     
-    //CSS
-    
-}
-  
-/* 
-    ##Dispositivo = Mayoria de telefonos moviles (vertical)
-    ##Resolucion = B/w 320px to 479px
-*/
-  
-@media (min-width: 320px) and (max-width: 480px) {
     /*--Portada--*/
     .title {
         h1 {
@@ -61,6 +40,7 @@
             text-align: center;
         }
     }
+
     /*--Generales--*/
     h2 {
         font-size: 2.5rem;
@@ -71,14 +51,14 @@
     }
 
     /*-- MainTienda--*/
-    .contenedor{
+    .contenedor {
         grid-template-columns: 320px;
         grid-template-rows: repeat(6,auto);
         justify-content: center;
         align-items: center;  
     }
     
-    .contenidosImagen{
+    .contenidosImagen {
         text-align: center;
     }
 
@@ -86,7 +66,6 @@
         width: 50%;
         border-radius:4rem;
     }
-
 
     /*-- Footer--*/
     footer {
@@ -104,14 +83,14 @@
     text-align: center;
     }
 
-    .footer__seguinos{
+    .footer__seguinos {
         grid-row: 2;
         grid-column: 1;
         justify-content: center;
         text-align: center;
     }
 
-    .footer__seguino--parrafo{
+    .footer__seguino--parrafo {
         text-align: center;
     }
 
@@ -120,19 +99,19 @@
         font-size: 2rem;
     }
     
-    .footer__contacto{
+    .footer__contacto {
         grid-row: 3;
         grid-column: 1;
     }
 
-    .footer__contacto h3{
+    .footer__contacto h3 {
         text-align: center;
         font-size: 2rem;
     }
 
-    .footer__seguinos--email{
+    .footer__seguinos--email {
         font-size: 1.5rem;
-      }
+    }
 
     .boton {
         
@@ -145,32 +124,32 @@
         margin-left: 0.2rem;
     }
       
-    .footer__contacto #emailContacto{
+    .footer__contacto #emailContacto {
         
         font-size: 1.2rem;
         
         margin-left: 0.2rem;
     }
       
-    .footer__contacto textarea{
+    .footer__contacto textarea {
         
         font-size: 1.2rem;
     }
 
-    .contenidosImagen__parrafo{
+    .contenidosImagen__parrafo {
         font-size: 1.2rem;      
     }
         
-    .contenidosImagen__titulo{
+    .contenidosImagen__titulo {
         font-size: 2rem;
     }
 
     /*-- Tabla nuestras cervezas--*/
     table {
         border: 0;
-      }
+    }
     
-      table thead {
+    table thead {
         border: none;
         clip: rect(0 0 0 0);
         height: 1px;
@@ -179,46 +158,354 @@
         padding: 0;
         position: absolute;
         width: 0.1rem;
-      }
+    }
       
-      table tr {
+    table tr {
         border-bottom: 0.3rem solid #ddd;
         display: block;
         margin-bottom: .625em;
-      }
+    }
       
-      table td {
+    table td {
         border-bottom: 1px solid #ddd;
         display: block;
         font-size: .8em;
         text-align: right;
-      }
+    }
       
-      table td::before {
-        
+    table td::before {
         content: attr(data-label);
         float: left;
         font-weight: bold;
         text-transform: uppercase;
-      }
+    }
       
-      table td:last-child {
+    table td:last-child {
         border-bottom: 0;
-      }
+    }
 
-      /*--Pagina fabrica
+      /*--Pagina fabrica*/
+    .caja {
+	    width: 90%;
+    }
 
-      /*--Pagina contacto--*/
-      .contactoContainer__parrafo {
+    .caja__contenido {
+        display: grid;
+        height: 500px;
+        grid-template-columns: auto;
+        background-color: $marron-oscuro;
+        border-radius: 15px;
+    }
+    .imgFab {
+        width:90%;
+    }
+
+    .botonFab__link {
+        font-size: 1.5rem;
+
+    }
+
+    /*--Pagina fabrica 1 y 2*/
+    .contenidoImagenFab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+
+    .contenidoImagenFab__img {
+        width:80%;
+    }
+
+    .contenidoUbicación__Mapa {
+        width: 300px;
+        height: 380px;
+    }
+
+    .map {
+        width: 250px;
+        height: 340px;
+
+    }
+
+    .contenidoTimeline::after {
+        left: 31px;
+    }
+
+    .contenidoTimeline__caja {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .contenidoTimeline__caja ::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after, .right::after {
+        left: 25px;
+    }
+    
+    .right {
+        left: 0%;
+    }
+
+    /*--Pagina contacto--*/
+    .contactoContainer__parrafo {
         font-size: 1.3rem; 
-      }
+    }
 
-      .contactoContainer__boton {
+    .contactoContainer__boton {
         font-size: 1.5rem;
 
-      }
-      .contactoContainer__boton--link{
+    }
+    .contactoContainer__boton--link{
+        font-size: 1.5rem;
+    }
+    
+}
+  
+/* 
+    ##Dispositivo = Mayoria de telefonos moviles (vertical)
+    ##Resolucion = B/w 320px to 479px
+*/
+  
+@media (min-width: 320px) and (max-width: 480px) {
+    /*--Portada--*/
+    .title {
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+        }
+    }
+
+    /*--Generales--*/
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    /*-- MainTienda--*/
+    .contenedor {
+        grid-template-columns: 320px;
+        grid-template-rows: repeat(6,auto);
+        justify-content: center;
+        align-items: center;  
+    }
+    
+    .contenidosImagen {
+        text-align: center;
+    }
+
+    .contenidosImagen__img {
+        width: 50%;
+        border-radius:4rem;
+    }
+
+    /*-- Footer--*/
+    footer {
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 320px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer__redes {
+    grid-row: 1;
+    grid-column: 1;
+    
+    justify-content: center;
+    text-align: center;
+    }
+
+    .footer__seguinos {
+        grid-row: 2;
+        grid-column: 1;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer__seguino--parrafo {
+        text-align: center;
+    }
+
+    .footer__seguinos h3 {
+        text-align: center;
+        font-size: 2rem;
+    }
+    
+    .footer__contacto {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    .footer__contacto h3 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .footer__seguinos--email {
+        font-size: 1.5rem;
+    }
+
+    .boton {
+        
+        font-size: 1.5rem;
+    }
+
+    .footer__contacto #nombre {
+        
+        font-size: 1.5rem;
+        margin-left: 0.2rem;
+    }
+      
+    .footer__contacto #emailContacto {
+        
+        font-size: 1.2rem;
+        
+        margin-left: 0.2rem;
+    }
+      
+    .footer__contacto textarea {
+        
+        font-size: 1.2rem;
+    }
+
+    .contenidosImagen__parrafo {
+        font-size: 1.2rem;      
+    }
+        
+    .contenidosImagen__titulo {
+        font-size: 2rem;
+    }
+
+    /*-- Tabla nuestras cervezas--*/
+    table {
+        border: 0;
+    }
+    
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 0.1rem;
+    }
+      
+    table tr {
+        border-bottom: 0.3rem solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+      
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+      
+    table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+      
+    table td:last-child {
+        border-bottom: 0;
+    }
+
+      /*--Pagina fabrica*/
+    .caja {
+	    width: 90%;
+    }
+
+    .caja__contenido {
+        display: grid;
+        height: 500px;
+        grid-template-columns: auto;
+        background-color: $marron-oscuro;
+        border-radius: 15px;
+    }
+    .imgFab {
+        width:90%;
+    }
+
+    .botonFab__link {
         font-size: 1.5rem;
 
-      }
+    }
+
+    /*--Pagina fabrica 1 y 2*/
+    .contenidoImagenFab {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 1rem;
+    }
+
+    .contenidoImagenFab__img {
+        width:80%;
+    }
+
+    .contenidoUbicación__Mapa {
+        width: 300px;
+        height: 380px;
+    }
+
+    .map {
+        width: 250px;
+        height: 340px;
+
+    }
+
+    .contenidoTimeline::after {
+        left: 31px;
+    }
+
+    .contenidoTimeline__caja {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .contenidoTimeline__caja ::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    .left::after, .right::after {
+        left: 25px;
+    }
+    
+    .right {
+        left: 0%;
+    }
+
+    /*--Pagina contacto--*/
+    .contactoContainer__parrafo {
+        font-size: 1.3rem; 
+    }
+
+    .contactoContainer__boton {
+        font-size: 1.5rem;
+
+    }
+    .contactoContainer__boton--link{
+        font-size: 1.5rem;
+    }
 }

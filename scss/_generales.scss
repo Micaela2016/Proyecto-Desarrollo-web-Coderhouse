@@ -39,6 +39,12 @@ p {
     font-size: $tamañoLetra;
 }
 
+a:hover {
+    text-decoration: none;
+    color:$marron-claro;
+
+}
+
 /*--------Page 404--------*/
 .titulo {
     text-align: center;
