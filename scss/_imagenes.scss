@@ -12,7 +12,7 @@ $anchoImagen: 300px;
 }
 
 .contenidosImagen__img {
-    width: 100%;
+    width: 90%;
     border-radius:4rem;
     max-width: ($anchoImagen/6)*5;
     
@@ -25,8 +25,9 @@ $anchoImagen: 300px;
     max-width: $anchoImagen;
 }
 
-.contenidoImagenFab__img {
-    width:100%;
+.contenidoImagenFab__imgs #fab1, #fab2, #fab3, #fab4, #fab5, #fab6 {
+    width:90%;
     max-width: $anchoImagen;
     grid-row: 2;
+    margin:10px;
 }

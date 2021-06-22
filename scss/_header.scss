@@ -27,11 +27,12 @@
 .dropdown-formato {
   background-color: $marron-claro;
   border-radius: 1rem;
-
+  text-decoration: none;
 }
 
 .dropdown-menu a{
   color: $marron-oscuro;
+  text-decoration: none;
 }
 
 .dropdown-menu a:hover{
@@ -41,6 +42,11 @@
 .active {
   color: blanchedalmond;
 }
+
+.dropdown-item:hover{
+  background-color: blanchedalmond;
+}
+
 .navbar-toggler {
   background-color: $marron-claro;
 }

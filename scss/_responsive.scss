@@ -36,18 +36,18 @@
     /*--Portada--*/
     .title {
         h1 {
-            font-size: 5rem;
+            font-size: 5.5rem;
             text-align: center;
         }
     }
 
     /*--Generales--*/
     h2 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     /*-- MainTienda--*/
@@ -63,8 +63,16 @@
     }
 
     .contenidosImagen__img {
-        width: 50%;
-        border-radius:4rem;
+        width: 70%;
+    }
+
+    
+    .contenidosImagen__parrafo {
+        font-size: 1.5rem;      
+    }
+        
+    .contenidosImagen__titulo {
+        font-size: 2.5rem;
     }
 
     /*-- Footer--*/
@@ -96,7 +104,7 @@
 
     .footer__seguinos h3 {
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
     
     .footer__contacto {
@@ -106,42 +114,34 @@
 
     .footer__contacto h3 {
         text-align: center;
-        font-size: 2rem;
+        font-size: 2.4rem;
     }
 
     .footer__seguinos--email {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .boton {
         
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .footer__contacto #nombre {
         
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         margin-left: 0.2rem;
     }
       
     .footer__contacto #emailContacto {
         
-        font-size: 1.2rem;
+        font-size: 1.6rem;
         
         margin-left: 0.2rem;
     }
       
     .footer__contacto textarea {
         
-        font-size: 1.2rem;
-    }
-
-    .contenidosImagen__parrafo {
-        font-size: 1.2rem;      
-    }
-        
-    .contenidosImagen__titulo {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     /*-- Tabla nuestras cervezas--*/
@@ -197,7 +197,7 @@
         border-radius: 15px;
     }
     .imgFab {
-        width:90%;
+        width:95%;
     }
 
     .botonFab__link {
@@ -309,6 +309,14 @@
         border-radius:4rem;
     }
 
+    .contenidosImagen__parrafo {
+        font-size: 1.2rem;      
+    }
+        
+    .contenidosImagen__titulo {
+        font-size: 2rem;
+    }
+
     /*-- Footer--*/
     footer {
         grid-template-rows: auto auto auto;
@@ -378,13 +386,7 @@
         font-size: 1.2rem;
     }
 
-    .contenidosImagen__parrafo {
-        font-size: 1.2rem;      
-    }
-        
-    .contenidosImagen__titulo {
-        font-size: 2rem;
-    }
+ 
 
     /*-- Tabla nuestras cervezas--*/
     table {
@@ -433,7 +435,7 @@
 
     .caja__contenido {
         display: grid;
-        height: 500px;
+        height: 380px;
         grid-template-columns: auto;
         background-color: $marron-oscuro;
         border-radius: 15px;
@@ -449,15 +451,17 @@
 
     /*--Pagina fabrica 1 y 2*/
     .contenidoImagenFab {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        row-gap: 1rem;
+        
     }
 
-    .contenidoImagenFab__img {
-        width:80%;
+    .contenidoImagenFab__imgs{
+        flex-direction: column;
+    }
+
+
+
+    .contenidoImagenFab__imgs #fab1, #fab2, #fab3, #fab4, #fab5, #fab6 {
+        width:70%;
     }
 
     .contenidoUbicación__Mapa {
