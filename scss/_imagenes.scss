@@ -22,7 +22,7 @@ $anchoImagen: 300px;
     grid-column: 1;
     width:100%;
     border-radius:4rem;
-    max-width: $anchoImagen;
+    max-width: $anchoImagen+50;
 }
 
 .contenidoImagenFab__imgs #fab1, #fab2, #fab3, #fab4, #fab5, #fab6 {
