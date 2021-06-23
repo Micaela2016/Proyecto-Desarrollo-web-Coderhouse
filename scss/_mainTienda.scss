@@ -2,7 +2,7 @@
 
 /*----Formato pagina tienda----*/
 
-.contenedor{
+.contenedor {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: repeat(3,auto);
@@ -10,17 +10,17 @@
     align-items: center;  
 }
 
-.contenidosImagen{
+.contenidosImagen {
     text-align: center;
 }
     
-.contenidosImagen__parrafo{
+.contenidosImagen__parrafo {
     font-size: 1.5rem;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 400;       
 }
     
-.contenidosImagen__titulo{
+.contenidosImagen__titulo {
     color: $marron-oscuro;
     font-size: 3rem;
     font-family: 'Barlow Condensed', sans-serif;

@@ -63,7 +63,7 @@ $redes: (
   text-align: center;
 }
 
-.footer__seguinos--email{
+.footer__seguinos--email {
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400;
   font-size: $tamañoLetra;
@@ -76,7 +76,7 @@ $redes: (
 }
 
 /*--Contacto--*/
-.footer__contacto{
+.footer__contacto {
   grid-column: 3;
   padding: 1rem 0;
   margin-right: 0.5rem;
@@ -86,7 +86,7 @@ $redes: (
   flex-direction: column;
 }
 
-.footer__contacto form{
+.footer__contacto form {
   display: grid;
   grid-template-rows: repeat(3,4rem);
   grid-template-columns: auto auto;
@@ -102,7 +102,7 @@ $redes: (
   font-size: $tamañoLetra;
 }
 
-.footer__contacto #emailContacto{
+.footer__contacto #emailContacto {
   grid-row: 2/3;
   grid-column: 1/2;
   font-family: 'Barlow Condensed', sans-serif;
@@ -110,7 +110,7 @@ $redes: (
   font-size: $tamañoLetra;
 }
 
-.footer__contacto textarea{
+.footer__contacto textarea {
   grid-row: 1/4;
   grid-column: 2;
   font-family: 'Barlow Condensed', sans-serif;
@@ -123,7 +123,7 @@ $redes: (
   grid-column: 1/2;
 }
 
-.boton{
+.boton {
   padding: 0.4rem;
   border-color:$marron-oscuro;
   background-color: $marron-claro;
@@ -135,7 +135,7 @@ $redes: (
   font-size: ($tamañoLetra)-0.1rem;
 }
 
-.boton:hover{
+.boton:hover {
   border-color: white;  
   color: white;  
   background-color: black;

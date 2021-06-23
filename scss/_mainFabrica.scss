@@ -57,7 +57,7 @@
     color: $marron-oscuro;
 }
 
-.botonFab__link{
+.botonFab__link {
     text-decoration: none;
     font-size: 2rem;
     color:$marron-oscuro;
@@ -65,7 +65,7 @@
 }
 
 /*--Fabrica 1 y 2-- */
-.tituloFabricas{
+.tituloFabricas {
 	color: $marron-oscuro;
     font-size: 4rem;
     font-family: 'Barlow Condensed', sans-serif;
@@ -80,30 +80,30 @@
 	grid-template-rows: repeat(2, auto);
 }
 
-.contenidoImagenFab__imgs{
+.contenidoImagenFab__imgs {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 10px;
 }
 
-.contenidoImagenFab__titulo{
+.contenidoImagenFab__titulo {
 	grid-row: 1;
 	margin: 10px;
 
 }
 
-.contenidoImagenFab__img #fab1{
+.contenidoImagenFab__img #fab1 {
 	grid-column: 1;
 
 }
 
-.contenidoImagenFab__img #fab2{
+.contenidoImagenFab__img #fab2 {
 	grid-column: 2;
 
 }
 
-.contenidoImagenFab__img #fab3{
+.contenidoImagenFab__img #fab3 {
 	grid-column: 3;
 
 }

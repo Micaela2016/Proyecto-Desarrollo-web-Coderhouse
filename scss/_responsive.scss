@@ -84,11 +84,10 @@
     }
 
     .footer__redes {
-    grid-row: 1;
-    grid-column: 1;
-    
-    justify-content: center;
-    text-align: center;
+        grid-row: 1;
+        grid-column: 1;
+        justify-content: center;
+        text-align: center;
     }
 
     .footer__seguinos {
@@ -449,7 +448,7 @@
 
     /*--Pagina fabrica 1 y 2*/
 
-    .contenidoImagenFab__imgs{
+    .contenidoImagenFab__imgs {
         flex-direction: column;
     }
 
@@ -502,7 +501,7 @@
         font-size: 1.5rem;
 
     }
-    .contactoContainer__boton--link{
+    .contactoContainer__boton--link {
         font-size: 1.5rem;
     }
 }
