@@ -219,7 +219,7 @@ footer {
   text-align: center; }
 
 .contenidosImagen__parrafo {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 400; }
 
@@ -341,15 +341,6 @@ tr, td {
 .contenidoImagenFab__titulo {
   grid-row: 1;
   margin: 10px; }
-
-.contenidoImagenFab__img #fab1 {
-  grid-column: 1; }
-
-.contenidoImagenFab__img #fab2 {
-  grid-column: 2; }
-
-.contenidoImagenFab__img #fab3 {
-  grid-column: 3; }
 
 /*--Ubicacion--*/
 .contenidoUbicacion {
@@ -571,14 +562,76 @@ tr, td {
     ##Resolucion = B/w 768px to 1024px
 */
 @media (min-width: 768px) and (max-width: 1024px) {
-  .contenedor {
-    grid-template-columns: repeat(3, 1fr); }
-  .contenedorMain {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, auto); }
-  .contenidosImagenes {
-    grid-column-start: auto;
-    grid-column-end: auto; } }
+  /*--Portada--*/
+  .title h1 {
+    font-size: 7rem;
+    text-align: center; }
+  /*--Generales--*/
+  h2 {
+    font-size: 3rem; }
+  p {
+    font-size: 1.8rem; }
+  /*-- MainTienda--*/
+  .contenidosImagen__img {
+    width: 75%; }
+  .contenidosImagen__parrafo {
+    font-size: 1.6rem; }
+  .contenidosImagen__titulo {
+    font-size: 2.7rem; }
+  /*-- Footer--*/
+  .footer__seguinos h3 {
+    text-align: center;
+    font-size: 2.6rem; }
+  .footer__contacto h3 {
+    text-align: center;
+    font-size: 2.6rem; }
+  .footer__seguinos--email {
+    font-size: 1.7rem; }
+  .boton {
+    font-size: 1.7rem; }
+  .footer__contacto #nombre {
+    font-size: 1.7rem;
+    margin-left: 0.2rem; }
+  .footer__contacto #emailContacto {
+    font-size: 1.7rem;
+    margin-left: 0.2rem; }
+  .footer__contacto textarea {
+    font-size: 1.7rem; }
+  /*--Pagina nuestras cervezas*/
+  .contenedorTabla {
+    margin: 20px; }
+  /*--Pagina fabrica*/
+  .caja {
+    width: 90%; }
+  .imgFab {
+    width: 90%; }
+  .botonFab__link {
+    font-size: 1.7rem; }
+  /*--Pagina fabrica 1 y 2*/
+  .contenidoImagenFab__imgs {
+    gap: 2px; }
+  .contenidoImagenFab__imgs #fab1, #fab2, #fab3, #fab4, #fab5, #fab6 {
+    width: 30%;
+    margin: 2px; }
+  .imgFab {
+    width: 80%; }
+  .contenidoUbicación__Mapa {
+    width: 400px;
+    height: 480px; }
+  .map {
+    width: 350px;
+    height: 440px; }
+  .contenidoTimeline__texto--titulo {
+    font-size: 3rem; }
+  .contenidoTimeline__texto--parrafo {
+    font-size: 1.6rem; }
+  /*--Pagina contacto--*/
+  .contactoContainer__parrafo {
+    font-size: 1.8rem; }
+  .contactoContainer__boton {
+    font-size: 1.9rem; }
+  .contactoContainer__boton--link {
+    font-size: 1.9rem; } }
 
 /* 
     ##Dispositivo = Tablets de baja resolucion y telefnos Mobiles (horizontal)
@@ -689,13 +742,10 @@ tr, td {
   .botonFab__link {
     font-size: 1.5rem; }
   /*--Pagina fabrica 1 y 2*/
-  .contenidoImagenFab {
-    display: flex;
+  .contenidoImagenFab__imgs {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 1rem; }
-  .contenidoImagenFab__img {
+    gap: 2px; }
+  .contenidoImagenFab__imgs #fab1, #fab2, #fab3, #fab4, #fab5, #fab6 {
     width: 80%; }
   .contenidoUbicación__Mapa {
     width: 400px;
@@ -703,6 +753,10 @@ tr, td {
   .map {
     width: 350px;
     height: 440px; }
+  .contenidoTimeline__texto--titulo {
+    font-size: 2.7rem; }
+  contenidoTimeline__texto--parrafo {
+    font-size: 1.5rem; }
   .contenidoTimeline::after {
     left: 31px; }
   .contenidoTimeline__caja {
@@ -838,15 +892,21 @@ tr, td {
     font-size: 1.5rem; }
   /*--Pagina fabrica 1 y 2*/
   .contenidoImagenFab__imgs {
-    flex-direction: column; }
+    flex-direction: column;
+    gap: 2px; }
   .contenidoImagenFab__imgs #fab1, #fab2, #fab3, #fab4, #fab5, #fab6 {
-    width: 70%; }
+    width: 70%;
+    margin: 2px; }
   .contenidoUbicación__Mapa {
     width: 300px;
     height: 380px; }
   .map {
     width: 250px;
     height: 340px; }
+  .contenidoTimeline__texto--titulo {
+    font-size: 2.5rem; }
+  contenidoTimeline__texto--parrafo {
+    font-size: 1.3rem; }
   .contenidoTimeline::after {
     left: 31px; }
   .contenidoTimeline__caja {
